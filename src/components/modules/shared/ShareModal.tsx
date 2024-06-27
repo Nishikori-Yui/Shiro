@@ -34,11 +34,11 @@ const shareList = [
   },
 
   {
-    name: '复制链接',
+    name: '複製連結',
     icon: <i className="icon-[mingcute--copy-fill]" />,
     onClick: (data: ShareData) => {
       navigator.clipboard.writeText(data.url)
-      toast('已复制到剪贴板')
+      toast('已複製到剪貼簿')
     },
   },
 ]

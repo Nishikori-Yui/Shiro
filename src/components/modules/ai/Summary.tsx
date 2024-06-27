@@ -40,7 +40,7 @@ export const AISummary: FC<AiSummaryProps> = (props) => {
         type: 'page',
       }
     } else {
-      throw new Error('未知类型')
+      throw new Error('未知類型')
     }
 
     return payload
@@ -56,7 +56,7 @@ export const AISummary: FC<AiSummaryProps> = (props) => {
           JSON.stringify(payload),
         )}&lang=${navigator.language}`,
       ).then((res) => res.json())
-      if (!data) throw new Error('请求错误')
+      if (!data) throw new Error('請求錯誤')
       return data
     },
     retryDelay: 5000,
