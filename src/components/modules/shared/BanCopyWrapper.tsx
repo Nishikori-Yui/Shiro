@@ -67,7 +67,7 @@ export const BanCopyWrapper: FC<PropsWithChildren> = (props) => {
                     注意：
                   </div>
                   <div className="pointer-events-none my-3 text-lg text-neutral-900 text-opacity-80 dark:text-zinc-100">
-                    <p>本文章为站长原创，保留版权所有，禁止复制。</p>
+                    <p>本文為站長原創，保留版權所有，禁止複製。</p>
                   </div>
                 </m.div>
               </DialogContent>

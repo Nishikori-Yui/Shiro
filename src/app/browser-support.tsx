@@ -44,7 +44,7 @@ export const BrowserSupport = () => {
           },
         }),
       )
-      alert('您的浏览器版本过低，请升级浏览器')
+      alert('您的瀏覽器版本過低，請升級瀏覽器')
     }
   }, [])
   return null
