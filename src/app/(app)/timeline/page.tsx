@@ -110,7 +110,7 @@ export default function TimelinePage() {
 
   const memory = search.get('bookmark') || search.get('memory')
 
-  const title = !memory ? '时间线' : '回忆'
+  const title = !memory ? '時間線' : '回憶'
 
   const { posts = [], notes = [] } = data
   const sortedMap = new Map<number, MapType[]>()
@@ -121,7 +121,7 @@ export default function TimelinePage() {
       const year = date.getFullYear()
       const data: MapType = {
         title: post.title,
-        meta: [post.category.name, '博文'],
+        meta: [post.category.name, '文稿'],
         date,
         href: `/posts/${post.category.slug}/${post.slug}`,
 
@@ -144,8 +144,8 @@ export default function TimelinePage() {
         title: note.title,
         meta: [
           note.mood ? `心情：${note.mood}` : undefined,
-          note.weather ? `天气：${note.weather}` : undefined,
-          '手记',
+          note.weather ? `天氣：${note.weather}` : undefined,
+          '手記',
         ].filter(Boolean) as string[],
         date,
         href: `/notes/${note.nid}`,
@@ -172,7 +172,7 @@ export default function TimelinePage() {
 
   const subtitle = `共有 ${
     sortedArr.flat(2).filter((i) => typeof i === 'object').length
-  } 篇文章，${!memory ? '再接再厉' : '回顾一下从前吧'}`
+  } 篇文章，${!memory ? '再接再厲' : '回顧一下從前吧'}`
 
   return (
     <NormalContainer>
@@ -184,7 +184,7 @@ export default function TimelinePage() {
           <>
             <Divider className="my-8 w-[80px]" />
             <TimelineProgress />
-            <p>活在当下，珍惜眼下</p>
+            <p>活在當下，珍惜眼前</p>
           </>
         )}
       </header>
