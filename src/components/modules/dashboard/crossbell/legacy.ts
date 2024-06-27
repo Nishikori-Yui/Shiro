@@ -29,7 +29,7 @@ export class CrossBellConnector {
     await contract.walletClient.requestAddresses()
 
     if (!contract.account.address) {
-      throw new Error('未连接到 metamask')
+      throw new Error('未連接到 metamask')
     }
     this.contract = contract
     return contract
@@ -77,15 +77,15 @@ export class CrossBellConnector {
           .catch(() => '')
 
         if (!articleUrl) {
-          throw new Error('文章链接生成失败')
+          throw new Error('文章連結生成失敗')
         }
 
         const contentWithFooter = `${text}
 
 <span style="text-align: right;font-size: 0.8em; float: right">此文由 [Mix Space](https://github.com/mx-space) 同步更新至 xLog
-原始链接为 <${articleUrl}></span><br ><br >`
+原始連結為 <${articleUrl}></span><br ><br >`
 
-        toast.info('正在发布到 xLog...')
+        toast.info('正在發布到 xLog...')
 
         const input = {
           siteId: SITE_ID,
@@ -101,7 +101,7 @@ export class CrossBellConnector {
             'tags' in data
               ? data.tags.toString()
               : this.isNoteModel(data)
-                ? '手记'
+                ? '手記'
                 : '',
           publishedAt: data.created,
         }
@@ -149,12 +149,12 @@ export class CrossBellConnector {
 
       await post().catch((err) => {
         console.error(err)
-        toast.error('xLog 发布失败')
+        toast.error('xLog 發布失敗')
 
         throw err
       })
 
-      toast.success('xLog 发布成功')
+      toast.success('xLog 發布成功')
 
       let nextPageId = pageId
       if (!nextPageId) {
@@ -162,7 +162,7 @@ export class CrossBellConnector {
       }
 
       if (!nextPageId) {
-        toast.error('无法获取 Crossbell Note pageId 任务终止')
+        toast.error('無法獲取 Crossbell Note pageId 任務終止')
         return
       }
       // update meta for pageId
@@ -174,7 +174,7 @@ export class CrossBellConnector {
         nextPageId.split('-')[1],
       )
       if (!crossbellNoteData) {
-        toast.error('无法获取 Crossbell Note 任务终止')
+        toast.error('無法獲取 Crossbell Note 任務終止')
         return
       }
       const {
