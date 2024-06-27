@@ -26,7 +26,7 @@ export const NoteHideIfSecret: Component = ({ children }) => {
     const MAX_TIMEOUT = (2 ^ 31) - 1
     if (isSecret && timeout && timeout < MAX_TIMEOUT) {
       timer = setTimeout(() => {
-        toast('刷新以查看解锁的文章', 'info', { autoClose: false })
+        toast('刷新以查看解鎖的文章', 'info', { autoClose: false })
       }, timeout)
     }
 
@@ -53,8 +53,8 @@ export const NoteHideIfSecret: Component = ({ children }) => {
       return (
         <>
           <div className="my-6 text-center">
-            <p>这是一篇非公开的文章。(将在 {dateFormat} 解锁)</p>
-            <p>现在处于登录状态，预览模式：</p>
+            <p>這是一篇非公開的文章。(將在 {dateFormat} 解鎖)</p>
+            <p>目前處於登錄狀態，預覽模式：</p>
           </div>
           {children}
         </>
@@ -62,7 +62,7 @@ export const NoteHideIfSecret: Component = ({ children }) => {
     }
     return (
       <div className="my-6 text-center">
-        这篇文章暂时没有公开呢，将会在 {dateFormat} 解锁，再等等哦
+        這篇文章暫時沒有公開呢，將會在 {dateFormat} 解鎖
       </div>
     )
   }
