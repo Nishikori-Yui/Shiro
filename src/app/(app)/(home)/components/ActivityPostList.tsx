@@ -53,11 +53,11 @@ export const ActivityPostList = () => {
         href={routeBuilder(Routes.Posts, {})}
       >
         <i className="icon-[mingcute--arrow-right-circle-line]" />
-        <span className="ml-2">还有更多</span>
+        <span className="ml-2">還有更多</span>
       </Link>
 
       <Divider />
-      <h2 className="text-2xl font-medium leading-loose">最近更新的手记</h2>
+      <h2 className="text-2xl font-medium leading-loose">最近更新的手記</h2>
       <ul className="shiro-timeline mt-4">
         {notes.map((note, i) => {
           return (
@@ -86,7 +86,7 @@ export const ActivityPostList = () => {
         href={routeBuilder(Routes.Timelime, { type: 'note' })}
       >
         <i className="icon-[mingcute--arrow-right-circle-line]" />
-        <span className="ml-2">还有更多</span>
+        <span className="ml-2">還有更多</span>
       </Link>
     </m.section>
   )
