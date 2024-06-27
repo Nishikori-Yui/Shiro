@@ -11,6 +11,30 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'Googlebot',
         disallow: ['/login/', '/preview/', '/dashboard', '/og'],
       },
+      {
+        userAgent: 'Baiduspider',
+        disallow: ['/'],
+      },
+      {
+        userAgent: 'Sogou',
+        disallow: ['/'],
+      },
+      {
+        userAgent: 'Sogou web spider',
+        disallow: ['/'],
+      },
+      {
+        userAgent: 'Sogou mobile spider',
+        disallow: ['/'],
+      },
+      {
+        userAgent: 'YisouSpider',
+        disallow: ['/'],
+      },
+      {
+        userAgent: '360Spider',
+        disallow: ['/'],
+      },
     ],
   }
 }
