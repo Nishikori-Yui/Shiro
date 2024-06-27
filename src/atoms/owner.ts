@@ -18,7 +18,7 @@ export const login = async (username?: string, password?: string) => {
   if (username && password) {
     const user = await apiClient.user.login(username, password).catch((err) => {
       console.error(err)
-      toast.error('再试试哦')
+      toast.error('再試試哦')
       throw err
     })
     if (user) {
@@ -27,7 +27,7 @@ export const login = async (username?: string, password?: string) => {
       jotaiStore.set(isLoggedAtom, true)
 
       await fetchAppUrl()
-      toast(`欢迎回来，${jotaiStore.get(ownerAtom)?.name}`, 'success')
+      toast(`歡迎回來，${jotaiStore.get(ownerAtom)?.name}`, 'success')
     }
 
     return true
@@ -55,7 +55,7 @@ export const login = async (username?: string, password?: string) => {
   }
 
   await refreshToken()
-  toast(`欢迎回来，${jotaiStore.get(ownerAtom)?.name}`, 'success')
+  toast(`歡迎回來，${jotaiStore.get(ownerAtom)?.name}`, 'success')
 
   return true
 }
