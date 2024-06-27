@@ -18,8 +18,8 @@ export const IpInfoPopover: Component<IpInfoPopoverProps> = (props) => {
           .join(' - ') || 'N/A'
       }<br />
       ISP: ${info.ispDomain || 'N/A'}<br />
-      组织：${info.ownerDomain || 'N/A'}<br />
-      范围：${info.range ? Object.values(info.range).join(' - ') : 'N/A'}
+      組織：${info.ownerDomain || 'N/A'}<br />
+      範圍：${info.range ? Object.values(info.range).join(' - ') : 'N/A'}
       `)
   }
 
