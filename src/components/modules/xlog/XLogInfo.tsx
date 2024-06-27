@@ -103,7 +103,7 @@ const XLogInfoBase: FC<{
           <span className="flex grow items-center space-x-2">
             <SafeIcon />
             <span>
-              此数据所有权由区块链加密技术和智能合约保障仅归创作者所有。
+              此數據的所有權由區塊鏈加密技術及智慧合約保障僅歸創作者所有。
             </span>
           </span>
           <IcRoundKeyboardArrowDown

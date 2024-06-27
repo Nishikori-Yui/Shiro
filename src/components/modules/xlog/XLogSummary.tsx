@@ -22,8 +22,8 @@ export const XLogSummary: FC<XLogSummaryProps> = (props) => {
           revalidate: 60 * 10,
         },
       }).then((res) => res.json())
-      if (!data) throw new Error('请求错误')
-      if (!data.summary) throw new Error('内容暂时无法获取')
+      if (!data) throw new Error('請求錯誤')
+      if (!data.summary) throw new Error('內容暫時無法取得')
       return data
     },
     enabled: !!cid,
@@ -56,7 +56,7 @@ export const XLogSummary: FC<XLogSummaryProps> = (props) => {
           )}
         </div>
         {isLoading && (
-          <p className="mt-3 border-slate-200 text-right text-sm dark:border-slate-800 ">
+          <p className="mt-3 border-slate-200 text-right text-sm dark:border-slate-800">
             (此服务由{' '}
             <a href="https://xlog.app" target="_blank" rel="noreferrer">
               xLog
