@@ -13,7 +13,7 @@ export const PostCombinedSwitch = () => {
     <>
       <LabelSwitch
         checked={copyright}
-        label="版权信息"
+        label="版權信息"
         onCheckedChange={setCopyright}
       />
 
@@ -23,11 +23,11 @@ export const PostCombinedSwitch = () => {
           setPin(pin ? new Date().toISOString() : null)
         }}
       >
-        <span>置顶</span>
+        <span>置頂</span>
       </LabelSwitch>
 
       <LabelSwitch checked={allowComment} onCheckedChange={setAllowComment}>
-        <span>允许评论</span>
+        <span>允許評論</span>
       </LabelSwitch>
     </>
   )
