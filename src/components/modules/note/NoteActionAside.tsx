@@ -108,7 +108,7 @@ const LikeButton = () => {
         control.start('tap', {
           repeat: 5,
         })
-        toast('谢谢你！', undefined, {
+        toast('感謝！', undefined, {
           iconElement: (
             <m.i
               className="icon-[mingcute--heart-fill] text-uk-red-light"
@@ -181,14 +181,14 @@ const ShareButton = () => {
 
         const hasShare = 'share' in navigator
 
-        const title = '分享一片宝藏文章'
+        const title = '分享一篇寶藏文章'
         const url = urlBuilder(
           routeBuilder(Routes.Note, {
             id: note.nid.toString(),
           }),
         ).href
 
-        const text = `嘿，我发现了一片宝藏文章「${note.title}」哩，快来看看吧！`
+        const text = `嘿，我發現了一篇寶藏文章「${note.title}」快來看看吧！`
 
         if (hasShare)
           navigator.share({
