@@ -216,10 +216,10 @@ export const useSendComment = () => {
       afterSubmit?.()
 
       const toastCopy = isLogged
-        ? '发表成功啦~'
+        ? '發布成功啦~'
         : isReply
-          ? '感谢你的回复！'
-          : '感谢你的评论！'
+          ? '感謝你的回覆！'
+          : '感謝你的評論！'
 
       const commentListQueryKey = buildCommentsQueryKey(originalRefId)
 

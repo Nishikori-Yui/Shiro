@@ -126,7 +126,7 @@ const PoweredBy: Component = ({ className }) => {
           </StyledLink>
         }
       >
-        这是{' '}
+        這是{' '}
         <StyledLink
           className="underline"
           href="https://github.com/innei/Shiro"
@@ -134,7 +134,7 @@ const PoweredBy: Component = ({ className }) => {
         >
           Shiro
         </StyledLink>{' '}
-        的开源版本。
+        的開源版本。
         {process.env.COMMIT_HASH && process.env.COMMIT_URL && (
           <MLink popper={false} href={process.env.COMMIT_URL}>
             版本哈希：{process.env.COMMIT_HASH.slice(0, 8)}
@@ -192,7 +192,7 @@ const FooterBottom = async () => {
           </a>
           <Divider />
           <a href="/sitemap.xml" target="_blank" rel="noreferrer">
-            站点地图
+            站點地圖
           </a>
           <Divider className="inline" />
 
@@ -200,9 +200,7 @@ const FooterBottom = async () => {
             <Divider className="hidden md:inline" />
           </SubscribeTextButton>
         </span>
-        <span className="mt-3 block md:mt-0 md:inline">
-          Stay hungry. Stay foolish.
-        </span>
+        <span className="mt-3 block md:mt-0 md:inline">感受風帶來的言語.</span>
       </p>
       <div>
         <PoweredBy className="my-3 block md:my-0 md:inline" />
