@@ -76,7 +76,7 @@ export async function GET() {
         return ReactDOM.renderToString(
           <div>
             <blockquote>
-              该渲染由 Shiro API 生成，可能存在排版问题，最佳体验请前往：
+              此渲染由 Shiro API 產生，可能存在排版問題，最佳體驗請前往：
               <a href={`${xss(item.link)}`}>{xss(item.link)}</a>
             </blockquote>
             {compiler(item.text, {
@@ -89,7 +89,7 @@ export async function GET() {
                 img: ({ src, alt }) => {
                   if (src) {
                     if (new URL(src).hostname === CDN_HOST) {
-                      return <span>此图片不支持在 RSS Render 中查看。</span>
+                      return <span>此圖片不支持在 RSS Render 中檢視。</span>
                     }
                   }
                   return <img src={src} alt={alt} />
@@ -140,7 +140,7 @@ export async function GET() {
       } catch {
         return ReactDOM.renderToString(
           <p>
-            当前内容无法在 RSS render 中正确渲染，请前往：
+            當前內容無法在 RSS render 中正確渲染，請前往：
             <a href={`${xss(item.link)}`}>${xss(item.link)}</a>
           </p>,
         )
