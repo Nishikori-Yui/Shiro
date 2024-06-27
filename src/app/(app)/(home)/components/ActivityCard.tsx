@@ -68,7 +68,7 @@ export const ActivityCard = ({ activity }: { activity: ReactActivityType }) => {
                   <b>
                     {activity.title ||
                       (activity.type === CollectionRefTypes.Recently
-                        ? '一条想法中'
+                        ? '一條想法中'
                         : null)}
                   </b>
                 </Link>{' '}
@@ -96,7 +96,7 @@ export const ActivityCard = ({ activity }: { activity: ReactActivityType }) => {
               <FaSolidFeatherAlt />
             </div>
             <div className="space-x-2">
-              <small>发布了</small>{' '}
+              <small>發布了</small>{' '}
               <Link href={routeBuilder(Routes.Note, { id: activity.nid })}>
                 <b>{activity.title}</b>
               </Link>
@@ -111,7 +111,7 @@ export const ActivityCard = ({ activity }: { activity: ReactActivityType }) => {
               <IcTwotoneSignpost />
             </div>
             <div className="space-x-2">
-              <small>发布了</small>{' '}
+              <small>發布了</small>{' '}
               <Link href={`/posts/${activity.slug}`}>
                 <b>{activity.title}</b>
               </Link>
@@ -169,7 +169,7 @@ export const ActivityCard = ({ activity }: { activity: ReactActivityType }) => {
             break
           }
           default: {
-            TitleLink = <b>已删除的内容</b>
+            TitleLink = <b>已刪除的內容</b>
           }
         }
         return (
@@ -178,7 +178,7 @@ export const ActivityCard = ({ activity }: { activity: ReactActivityType }) => {
               <i className="icon-[mingcute--heart-line]" />
             </span>
             <div className="space-x-2">
-              <small>有人点赞了</small> {TitleLink}
+              <small>有人點贊了</small> {TitleLink}
             </div>
           </div>
         )
